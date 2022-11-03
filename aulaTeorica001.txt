@@ -1,0 +1,63 @@
+Em 03/11/2022
+
+Aula 01 - O que é programação orientada a objetos?
+
+
+Excelente imagem:
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.javatpoint.com%2Fjava-oops-concepts&psig=AOvVaw0tag-m9WhHXyLldqMxwtQ_&ust=1667599459527000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKCiuZ2Ck_sCFQAAAAAdAAAAABAE
+
+-----------------------------------------------------------------
+
+Origem da orientação orientada a objetos
+POO - Programação orientada a objetos (Object-oriented Programming)
+
+
+Qual o objetivo da POO?
+Aproximar o mundo digital do mundo real.
+Essa nova filosofia de desenvolvimento tem ajudado novos programadores a se desenvolverem a alcançarem um novo patamar no desenvolvimento de aplicativos para o mundo atual.
+
+
+// Programação de Baixo Nível
+No início a 'programação' deveria ser feita de acordo com o tipo de máquina em que se estava trabalhando e seria bem mais efetiva e específica para aquela máquina. Era quase como trabalhar diretamente com linguagem de máquina. Isso era chamado de programação de baixo nível e costumava ser feita pelos próprios engenheiros.
+
+// Programação Linear (já era considerada de alto nível)
+Se tornou linear e já era compreensiva pelos programadores. Mas seguia de forma linear, não tinha desvios, era executada simplesmente de cima para baixo. Como se fosse uma lista de compras.
+
+// Programação estruturada (j´a é como a programação estruturada em portugol - algoritmos)
+Permitiu que a programação linear fosse executada fora da ordem natural e reta. Que pequenos pedaços de códigos pudessem usar desvios. Isso deu origem à sistemas.
+
+// Programação modular
+Se tornou necessária quando os sistemas começaram a evoluir e se tornar maiores e mais complexos. Permitia que se criasse pequenos módulos estruturados, valorizando dados e funcionalidades, e se colocasse eles em pequenas cápsulas protegidas que podiam fazer parte de sistemas cada vez maiores. Teve uma vida curta justamente pelo surgimento da POO.
+
+// Programação orientada a objetos
+Veio trazando algumas ideias da modular, mas expandiu muito mais. Quem criou a primeira POO foi o Alan Kay, ele era formado em matemática e em biologia e adorava educação (em 1970). Usou muitas ideias da interação e função celulares para criar a lógica de como um computador deveria ser. Foi ele quem teve a ideia do Dynabook (seria uma ideia de tablet). É considerado um dos pais do 'notebook'.
+Ele criou a linguagem 'smalltalk', que era para funcionar no dynabook. E ela possuía já as características das lingguagens POO.
+
+
+--------------------------------------------------------------
+
+Como os dados eram tratados ao longo dessa evolução?
+
+Nas linguagens de baixo nível até a programação estruturada (na verdade até mesmo na modular), os dados são trabalhados juntos, ao mesmo tempo, como uma massa de dados. Essa massa é tratada através de 'procedimentos'. Esses procedimentos acessam a massa de dados, a tratam e geram resultados. Só que o problema nesse tipo de tratamento é que nem todos os procedimentos precisam fazer uso de todos os dados disponíveis para aprensentar seus resultados. Isso acabava por levar à necessidade de uma filtragem inicial antes de o trabalho começar, o que é improdutivo. A proposta do Alan Kay então era tratar isso através de pequenos pedaços.
+
+
+Como os dados passaram a ser tratados em POO?
+Os dados passaram a ser divididos em blocos (objetos) e os procedimentos (métodos) trabalham somente em cima daquele bloco que precisam e não mais no todo. E existem diferentes blocos e diferentes métodos para cada um, sem que se precise mais filtrar a informação dos dados para saber o que usar ou não.
+
+A grande maioria das linguagens modernas são POO.
+
+-----------------------------------------------------------------------
+
+Vantagens da POO
+- Confiável: O isolamento entre as partes gera um software seguro. Ao alterar uma parte, nenhuma outra é afetada.
+- Oportuno: Ao dividir tudo em partes, várias delas podem ser desenvolvidas em paralelo.
+- Manutenível: Atualizar o software é mais fácil, vantajoso e eficiente.
+- Extensível: O software nã é estático. Ele deve crescer para permanecer útil.
+- Reutilizável: Podemos usar objetos de um sistema criado em outro sistema futuro.
+- Natural: Mais fácil de entender. Você se preocupa mais na funcionalidade do que nos detalhes de implementação.
+
+-----------------------------------------------------------------------
+
+Primeiramente vamos aprender JAVA.
+- JDK
+- NETBEANS 
