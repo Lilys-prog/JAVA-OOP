@@ -36,11 +36,11 @@ CRIANDO UMA 'CLASSE' CANETA (em forma de "algoritmo")
 
 Classe Caneta
 	// ATRIBUTOS	
-	modelo: Caractere;
-	cor: Caractere;
-	ponta: Real;
-	carga: Inteiro;
-	Tampada: Boolean;
+	modelo: Caractere;               // bic cristal
+	cor: Caractere;                      // azul
+	ponta: Real;                           // 0.5
+	carga: Inteiro;                        // 90%
+	Tampada: Boolean;              // false
 	
 	// MÉTODOS (como rotinas, funções e procedimentos em algoritmos). Dentro do método pode-se interagir e alterar atributos.
 	
@@ -57,3 +57,48 @@ Classe Caneta
 	FimMétodo
 	
 Na parte de STATUS, pode-se mostrar todas as situações atuais dos atributos.
+- está destampada
+- a carga é azul
+- está com 90% de carga
+- o modelo é bic cristal
+- a ponta tem o tamanho 0.5
+
+TODO OBJETO DEVE VIR DE UMA CLASSE (ou seja, possuir atributos, métodos e estado)
+Pegar uma classe e gerar um objeto é chamaddo de instanciar. Não se TRANSFORMA uma classe em objeto, cria-se um objeto a partir de uma classe.
+
+--------------------------------------------------------------
+
+Para instanciar usa-se a palavra 'new'.
+
+c1 = new Caneta();
+// c1 é o nome do objeto criado e 'Caneta' é o nome da classe.
+c1.cor = 'Azul';
+// o atributo cor do objeto recebe o valor 'Azul'
+c1.ponta = 0.5
+c1.tampada = false;
+c1.rabiscar();
+
+c2. new Caneta();
+c2.cor = vermelha;
+c2.ponta = 1.0;
+c2.tampada = false;
+c2.tampar();
+
+c1 e c2 são objetos diferentes oriundos da mesma classe.
+
+-----------------------------------------------------------------------------
+
+-- DEFINIÇÕES OFICIAIS --
+
+CLASSE: Define os atributos e métodos comuns que serão compartilhados por um objeto.
+
+OBJETO: É a instância de uma classe. Podem ter os mesmos atributos, mas com valores diferentes.
+
+----------------------------------------------------------------------------
+
+ABSTRAÇÃO: usar somente os atributos que importam e ignorar os demais.
+
+----------------------------------------------------------------------------
+
+
+
