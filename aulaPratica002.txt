@@ -1,0 +1,16 @@
+O que é um objeto - JAVA
+		Uma coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas características, comportamentos e estado atual.
+
+--------------------------------------------------------------------------------------
+
+No netbeans > criar projeto > dentro do java ant > java aplication e chamar de Aula002, deixando a classe principal.
+Uma vez que se crie um novo projeto em java, pode-se criar uma nova classe dentro do código-fonte. A partir da classe criada, pode-se instanciar novos objetos na página principal do projeto. Neste caso, a classe se chama simplesmente 'Caneta'.
+
+-------------------------------------------------------------------------------------
+
+A palavra "this" é uma autorreferência, ou seja, quem chamou o método vai ser substituído por "this".
+
+-------------------------------------------------------------------------------------
+
+Uma vez que a classe é criada, torna-se muito natural trabalhar com o objeto, como se fosse um objeto normal.
+Os objetos da mesma classe possuem os mesmos ATRIBUTOS e os mesmos MÉTODOS. O que pode ser diferente são os valores (que vão definir o ESTADO).
