@@ -1,1 +1,5 @@
-Na verdade, esta é a aula prática 01, na qual se ensina a instalar os apps. Como eu já tenho, vou anotar aqui qualquer coisa relevante.
+Na verdade, esta é a aula prática 01, na qual se ensina a instalar os apps (ambiente java). Como eu já tenho, vou anotar aqui qualquer coisa relevante.
+
+--------------------------------------------
+
+fiz o 'Olá, mundo!'
