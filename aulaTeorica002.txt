@@ -1,0 +1,59 @@
+O que é um objeto?
+- A ideia no OOP veio do conceito natural de objeto. Tanto os materiais quanto os abstratos, ideias também são objetos.
+
+Definição formal:
+- É uma coisa material ou abstrata que pode ser percebida pelos sentidos e descrita por meio das suas CARACTERÍSTICAS, COMPORTAMENTOS e ESTADO ATUAL. Pode ser concreto ou abstrato, desde que se possa definir esses três itens e descrever o objeto através deles.
+
+--------------------------------------------------------
+
+Considerando uma caneta como um objeto, ela pode ter o mesmo molde e diversas caracteerísticas compartilhadas, mas diferir em detalhes, como a cor da tinta. Como exemplo, uma caneta bic. Estão baseados na mesma classificação, uma fôrma, um modelo.
+
+Na OOP, a caneta em si seria considerada o objeto, e o molde através do qual ela foi feita seria a classe, já que ele serve para classificar o tipo de caneta.
+Uma classe tem sempre que responder 3 perguntas:
+- Que coisas eu tenho?
+- Que coisas eu faço?
+- Como eu estou agora?
+
+NO CASO DA CANETA:
+- Coisas que eu tenho: modelo, cor, ponta (fina ou grossa), carga, tampada ou não;
+- Coisas que eu faço: escrever, rabiscar, pintar, tampar, destampar;
+- como estou: 50% de carga, ponta fina, azul, destampada e escrevendo.
+
+EM OOP essas coisas têm nomes específicos:
+- coisas que eu tenho são ATRIBUTOS
+- coisas que eu faço são MÉTODOS
+- como eu estou é o STATUS (ESTADO)
+
+Todo objeto vem a partir de uma classe (um molde).
+
+Para criar um objeto, antes se faz necessário defnir uma classe. 
+
+Para fazer uma caneta, cria-se um molde, que passam por protótipos, addaptações e mudanças, até que se atinija o objetivo.
+
+----------------------------------------------------------------
+
+CRIANDO UMA 'CLASSE' CANETA (em forma de "algoritmo")
+
+Classe Caneta
+	// ATRIBUTOS	
+	modelo: Caractere;
+	cor: Caractere;
+	ponta: Real;
+	carga: Inteiro;
+	Tampada: Boolean;
+	
+	// MÉTODOS (como rotinas, funções e procedimentos em algoritmos). Dentro do método pode-se interagir e alterar atributos.
+	
+	Método rabiscar()
+		Se (tampada) então
+			Escreva("Erro")
+		senão
+			Escreva("Rabisco")
+		FimSe
+	FimMétodo
+	
+	Método tampar()
+		tampada = true;
+	FimMétodo
+	
+Na parte de STATUS, pode-se mostrar todas as situações atuais dos atributos.
