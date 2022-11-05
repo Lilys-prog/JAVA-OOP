@@ -1,0 +1,29 @@
+-- ISSO É MUITO IMPORTANTE --
+
+AULA 03 - O QUE É VISIBILIDADE EM UM OBJETO?
+
+-------------------------------------------------------------------------
+
+Linguagem de Modelagem Unificada - UML (Muito importante para a OOP, mas o curso não vai aprofundar. Pesquisar a respeito)
+
+- O DIAGRAMA DE CLASSES é o diagrama mais importante da UML.
+(caderno)
+
+- classes começam com letra maiúscula (são capitalizadas)
+- atributos e métodos começam com letra minúscula, mas MÉTODOS	 são seguidos de parênteses e atributos, não.
+ 
+-------------------------------------------------------------------------
+
+Modificadores de visibilidade
+Indicam o nível de acesso aos componentes internos de uma classe, ou seja, seus atributos e métodos. Existem 3 símbolos que representam esse acesso, de acordo com a UML, universalmente:
+ 
+  +    público
+ Todo atributo ou método definido como público vai definir que a classe atual e todas as outras classes podem ter acesso a ele e usá-lo.
+  
+ -     privado
+ Atributos ou métodos definidos como privados só dão acesso e uso à classe no qual foram criados.
+ 
+ #    protegido
+ Só tem acesso a classe atual e as suas sub-classes. (vai ter a ver com herança - parent/child)
+
+
