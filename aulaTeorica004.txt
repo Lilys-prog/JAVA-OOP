@@ -1,0 +1,63 @@
+AULA TEÓRICA 04 - MÉTODOS ESPECIAIS (aqui e no caderno)
+
+(Criação da estrutura de objetos, assim como definição de visibilidade)
+
+Em geral, pode-se adotar qualquer nome para métodos. Mas existem alguns que são universalmente usados na comunidade e, portanto, recomendados.
+
+----------------------------------------------------
+
+Usando um exemplo material
+
+                                        e = nova Estante();
+
+tem um objeto estante sendo instanciado, no caso acima. Se um objeto da classe 'Estante' foi criado, então uma classe 'Estante' também foi criada.
+
+Atributos de uma estante: tamanho, cor, quantas prateleiras, quantas gavetas, quantas portas, modelo, fabricante...
+Métodos: colocar algo, tirar algo, arrumar...
+
+total de documentos dentro da estante (atributo): totDoc (método)
+
+																				t = e.totDoc()
+
+Mas não é qualquer pessoa que pode simplesmente enfiar a mão na estante e pegar o que quer, viraria bagunça. 
+Entram, então, os MÉTODOS ACESSORES, que dão acesso a uma determinada coisa (getters <- inglês).
+
+O getter pega (acessa) a informação, um atributo. Seria a linha de raciiocínio do operador de caixa e do cliente da loja.
+
+Basicamente, pode-se dar acesso ao valor de um atributo sem dar acesso direto a esse atributo. Isso dá mais SEGURANÇA, já que não é qualquer um que pode mexer.
+	Esse não é um fator obrigatório na hora de codar, mas é claro que para o mercado de trabalho é muito importante.
+	
+																				t = e.getTotDoc()
+																				
+	Métodos getter podem acessar um atributo, mantendo a segurança de acesso à ele.
+
+-----------------------------------------------------------------------------------
+
+O segundo "método especial" é o método de adicionar atributos, ou seja
+
+																				e.totDDoc = etotDoc + 1					// esta é uma forma mais descritiva
+																				
+desta forma, também não seria uma forma segura. Qualquer um poderia chegar e colocar o que quisesse na estante, onde quisesse. Para controlar isso temos os MÉTODOS MODIFICADORES (OU MUTANTES) (setters <- inglês).
+	Da mesma forma que os getters, eles também são os que vão modificar os atributos, sem permitir que isso seja feito de forma direta. Isso também dá mais segurança.
+	
+																				e.setTotDoc(doc) 							// esta é uma forma mais abstrata			
+																			
+Observe-se que esse método tem parâmetro. Normalmente é o que vai acontecer no método setter, ele vai pedir um parâmetro.
+
+---------------------------------
+
+
+Em geral, os métodos setter parecem mais simples que os getter, graças ao seu poder dde abstração.
+
+--------------------------------
+
+Ao definir os atributos de uma classe, também é importante definir os seus métodos getters e setters, imediatamente.
+(caderno)
+
+--------------------------------------------------------------------------
+
+Outro método especial é o MÉTODO CONSTRUTOR (construct <- inglês).
+
+Imagine que toda caneta que é criadad vc quer que venha tampada, por padrão, que não se precise fazer chamada ou aplicação de método (tipo na loja). Para isso serve o método construtor, para fazer algo automaticamente.
+
+(caderno)
