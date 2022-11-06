@@ -1,0 +1,9 @@
+MUDANDO A VISIBILIDADE EM JAVA
+(esse trem de visibilidade lembra muito as permissões de arquivo - ler, escrever e executar)
+
+
+Abrir o netbeans e copiar a aula02, trocando o nome pra 03, pra reaproveitar o código feito.
+
+	Nesta aula vamos pegar o código feito para a classe caneta e determinar as visiibilidades e o que fazem. A visibilidade padrão do java é "pública para pacote". Como neste curso vamos sempre usar um único pacote, esse conceito não será expandido. Pesquisar depois. Trabalhar com mais de um pacote sem ter a visibilidade definida é um problema.
+	
+	Via de regra sempre se definirá a visibilidade.
