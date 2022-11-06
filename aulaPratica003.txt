@@ -4,6 +4,13 @@ MUDANDO A VISIBILIDADE EM JAVA
 
 Abrir o netbeans e copiar a aula02, trocando o nome pra 03, pra reaproveitar o código feito.
 
-	Nesta aula vamos pegar o código feito para a classe caneta e determinar as visiibilidades e o que fazem. A visibilidade padrão do java é "pública para pacote". Como neste curso vamos sempre usar um único pacote, esse conceito não será expandido. Pesquisar depois. Trabalhar com mais de um pacote sem ter a visibilidade definida é um problema.
+	Nesta aula vamos pegar o código feito para a classe caneta e determinar as visiibilidades e o que fazem. A visibilidade padrão do java é "pública para pacote". Como neste curso vamos sempre usar um único pacote, esse conceito não será expandido. Pesquisar depois. 
+	Trabalhar com mais de um pacote sem ter a visibilidade definida é um problema.
+	Ou seja, por natureza o java vai definir tudo como público, se não for manualmente definido, EXCETO se vc estiver trabalhando com mais de um pacote. Aí, não definir a visibilidade vai causar problemas, torna-se mandatório definir.
 	
-	Via de regra sempre se definirá a visibilidade.
+	Via de regra sempre se definirá a visibilidade ao longo do curso.
+	
+Algo que possua a visibilidade privada só pode ser mexido pela própria classe.
+
+Um exemplo da vida real:
+	Ao comprar algo na loja, vc não tem acesso ao caixa, só o operador tem acesso. Você tem acesso ao caixa ATRAVÉS do operador. Se você precisar dde troco, por exemplo, vc não pega na máquina, é o operador quem pega e te entrega. Ou seja. a máquina é de acesso privado a você, mas o operador é dda mesma classe e tem acesso a ela. E ele tem acesso público a você, então ele pode mexer nela para que você realize uma operação, como pagamento, através dele.
