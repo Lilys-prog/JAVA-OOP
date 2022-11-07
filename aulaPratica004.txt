@@ -1,0 +1,11 @@
+Usando o modelo que foi feito na aula passada em forma de algoritmo (tá no caderno o completo).
+
+----------------------------------------------------------------------------
+
+Sobre escopo:
+
+		Quando o atributo é público, "não faz diferença" utilizar o método setter ou mexer diretamente no atributo. No entanto, se o atributo é privado, a única forma de acessar é através de um método.
+
+----------------------------------------------------------------------------
+
+alt + insert  =====>    permite criar os métodos de forma mais rápida. Depois de definiir as variáveis ele permite selecionar o método que se quer adicionar e quais variáveis vão estar reeelacionadas a ele.
