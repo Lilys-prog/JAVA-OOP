@@ -10,7 +10,7 @@ public class regAcademia {
     public int aulaLuta;
     private int horaAcademia;
     private int persTrainer;
-    private int agenda;
+    private int agenda;    
     
     // área de métodos
     public regAcademia(String nomeAluno, int regAluno, int agenda) { // construtor
@@ -18,15 +18,15 @@ public class regAcademia {
         this.regAluno = regAluno;
         this.agenda = agenda;
     }
-    public matricular() {
-        
+    public void status(){
+         
     }
-    public agendar() {
-        
+    public void matricular(String name) {
+      
     }
-    public mensalidade() {
+    public void agendar() {
         
-    }
+    }    
     public String getNomeAluno() {
         return nomeAluno;
     }
