@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class ContaBanco {
     
+    // atributos
     public int numConta;
     public String cc;
     public String cp;
@@ -41,8 +42,10 @@ public class ContaBanco {
     }
     
     public void sacar(float val) {
-        if ((status == true) && (saldo > 0f)) {
+        if ((status == true) && (saldo >= val)) {
            saldo -= val; 
+        } else {
+            System.out.println("Não há saldo disponível para esse saque.");           
         }        
     }  
     

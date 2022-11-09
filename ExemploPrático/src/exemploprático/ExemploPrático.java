@@ -10,9 +10,10 @@ public class ExemploPrático {
         
         conta1.abrirConta();
         conta1.depositar(300f);        
-        conta1.setTipo("cp");        
+        conta1.setTipo("cp"); 
+        conta1.setNumConta(123);
         conta1.pagarMensal(); 
-        conta1.setDono("Jubileu");        
+        conta1.setDono("Jubileu");                
         conta1.estado();
         
         System.out.println("=============================");
@@ -22,8 +23,10 @@ public class ExemploPrático {
         conta2.abrirConta();
         conta2.depositar(500f);
         conta2.setTipo("cc");
+        conta2.setNumConta(321);
         conta2.pagarMensal();
         conta2.setDono("Creuza");
+        conta2.depositar(500.25f);
         conta2.estado();
         
     }
