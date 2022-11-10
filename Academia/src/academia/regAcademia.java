@@ -8,29 +8,39 @@ public class regAcademia {
     public int aulaZumb;
     public int aulaAero;
     public int aulaLuta;
-    private int horaAcademia;
+    private int horaAcademia;   
     private int persTrainer;
-    private int agenda;    
+    private boolean agenda;       
     
     // área de métodos
-    public regAcademia(String nomeAluno, int regAluno, int agenda) { // construtor
-        this.nomeAluno = nomeAluno;
-        this.regAluno = regAluno;
-        this.agenda = agenda;
+    public regAcademia(String nomeAluno, int regAluno, boolean agenda) { // construtor
+        this.setNomeAluno("");
+        this.setRegAluno(-1);
+        this.setAgenda(false);
     }
+    
     public void status(){
-         
+        System.out.println(this.getHoraAcademia() + " horas.");
+        System.out.println("Nome do aluno: " + this.getNomeAluno());
+        System.out.println("Número de registro: " + this.getRegAluno());
+        System.out.println("Agenda criada? " + this.getAgenda());        
+        System.out.println("======================================");
     }
-    public void matricular(String name) {
-      
+    
+    public void matricular(String name, int reg) {      
+      this.setNomeAluno(name);
+      this.setRegAluno(reg);
+      this.setAgenda(true);
     }
+    
     public void agendar() {
         
-    }    
+    }  
+    
     public String getNomeAluno() {
         return nomeAluno;
     }
-
+    
     public void setNomeAluno(String nomeAluno) {
         this.nomeAluno = nomeAluno;
     }
@@ -81,7 +91,12 @@ public class regAcademia {
 
     public void setHoraAcademia(int horaAcademia) {
         this.horaAcademia = horaAcademia;
-    }
+        if (horaAcademia >= 6 && horaAcademia < 22) {
+            System.out.println("Academia aberta!");                      
+        } else {
+            System.out.println("Academia fechada!");
+        }
+    }    
 
     public int getPersTrainer() {
         return persTrainer;
@@ -91,11 +106,11 @@ public class regAcademia {
         this.persTrainer = persTrainer;
     }
 
-    public int getAgenda() {
+    public boolean getAgenda() {
         return agenda;
     }
 
-    public void setAgenda(int agenda) {
+    public void setAgenda(boolean agenda) {
         this.agenda = agenda;
     }
 
