@@ -3,14 +3,14 @@ public class regAcademia {
 
     // atributos
     private String nomeAluno;
-    private int regAluno;
-    public int aulaMusc;
-    public int aulaZumb;
-    public int aulaAero;
-    public int aulaLuta;
-    private int horaAcademia;   
+    private int regAluno;    
+    private int horaAcademia;     
+    private boolean agenda;   
+    private int zumba;
+    private int aero;
+    private int musc;
+    private int luta;
     private int persTrainer;
-    private boolean agenda;       
     
     // área de métodos
     public regAcademia(String nomeAluno, int regAluno, boolean agenda) { // construtor
@@ -33,8 +33,14 @@ public class regAcademia {
       this.setAgenda(true);
     }
     
-    public void agendar() {
-        
+    public void agendar(int aero, int zumba, int musc, int luta, int personal) {      
+       this.setAero(aero);
+       this.setZumba(zumba);
+       this.setMusc(musc);
+       this.setLuta(luta);
+       this.setPersTrainer(persTrainer);
+       if
+       
     }  
     
     public String getNomeAluno() {
@@ -51,39 +57,7 @@ public class regAcademia {
 
     public void setRegAluno(int regAluno) {
         this.regAluno = regAluno;
-    }
-
-    public int getAulaMusc() {
-        return aulaMusc;
-    }
-
-    public void setAulaMusc(int aulaMusc) {
-        this.aulaMusc = aulaMusc;
-    }
-
-    public int getAulaZumb() {
-        return aulaZumb;
-    }
-
-    public void setAulaZumb(int aulaZumb) {
-        this.aulaZumb = aulaZumb;
-    }
-
-    public int getAulaAero() {
-        return aulaAero;
-    }
-
-    public void setAulaAero(int aulaAero) {
-        this.aulaAero = aulaAero;
-    }
-
-    public int getAulaLuta() {
-        return aulaLuta;
-    }
-
-    public void setAulaLuta(int aulaLuta) {
-        this.aulaLuta = aulaLuta;
-    }
+    }    
 
     public int getHoraAcademia() {
         return horaAcademia;
@@ -96,15 +70,7 @@ public class regAcademia {
         } else {
             System.out.println("Academia fechada!");
         }
-    }    
-
-    public int getPersTrainer() {
-        return persTrainer;
-    }
-
-    public void setPersTrainer(int persTrainer) {
-        this.persTrainer = persTrainer;
-    }
+    }     
 
     public boolean getAgenda() {
         return agenda;
@@ -114,9 +80,48 @@ public class regAcademia {
         this.agenda = agenda;
     }
 
+    public int getZumba() {
+        return zumba;
+    }
+
+    public void setZumba(int zumba) {
+        this.zumba = zumba;
+    }
+
+    public int getAero() {
+        return aero;
+    }
+
+    public void setAero(int aero) {
+        this.aero = aero;
+    }
+
+    public int getMusc() {
+        return musc;
+    }
+
+    public void setMusc(int musc) {
+        this.musc = musc;
+    }
+
+    public int getLuta() {
+        return luta;
+    }
+
+    public void setLuta(int luta) {
+        this.luta = luta;
+    }
+
+    public int getPersTrainer() {
+        return persTrainer;
+    }
+
+    public void setPersTrainer(int persTrainer) {
+        this.persTrainer = persTrainer;
+    }
 
     
-    
+     
     
 }
 
