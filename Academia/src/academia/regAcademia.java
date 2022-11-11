@@ -23,7 +23,9 @@ public class regAcademia {
         System.out.println(this.getHoraAcademia() + " horas.");
         System.out.println("Nome do aluno: " + this.getNomeAluno());
         System.out.println("Número de registro: " + this.getRegAluno());
-        System.out.println("Agenda criada? " + this.getAgenda());        
+        System.out.println("Agenda criada? " + this.getAgenda()); 
+        System.out.println("Aula de zumba: " + zumba + " horas");
+        System.out.println("Aula de Aerohit: " + aero + " horas.");
         System.out.println("======================================");
     }
     
@@ -33,15 +35,28 @@ public class regAcademia {
       this.setAgenda(true);
     }
     
-    public void agendar(int aero, int zumba, int musc, int luta, int personal) {      
-       this.setAero(aero);
-       this.setZumba(zumba);
-       this.setMusc(musc);
-       this.setLuta(luta);
-       this.setPersTrainer(persTrainer);
-       if
-       
-    }  
+    public void agendar(int aero, int zumba, int musc, int luta, int persTrainer) {
+        if (setAgenda()) {
+            this.setAero(aero);
+            this.setZumba(zumba);
+            this.setMusc(musc);
+            this.setLuta(luta);
+            this.setPersTrainer(persTrainer);
+            if (aero == zumba || aero == musc || aero == luta || aero == persTrainer) {
+                System.out.println("Você tem aulas marcadas para o mesmo horário. Verifique e atualize.");
+            } else if (zumba == musc || zumba == luta || zumba == persTrainer) {
+                System.out.println("Você tem aulas marcadas para o mesmo horário. Verifique e atualize.");
+            } else if (musc == luta || musc == persTrainer) {
+                System.out.println("Você tem aulas marcadas para o mesmo horário. Verifique e atualize.");
+            } else if (luta == persTrainer) {
+                System.out.println("Você tem aulas marcadas para o mesmo horário. Verifique e atualize.");
+            } else {
+                System.out.println("Agenda pronta!");
+            }
+        } else {
+            System.out.println("Não podemos fazer sua agenda, você não está matriculado.");
+        }
+    } 
     
     public String getNomeAluno() {
         return nomeAluno;
@@ -77,7 +92,10 @@ public class regAcademia {
     }
 
     public void setAgenda(boolean agenda) {
-        this.agenda = agenda;
+        if (horaAcademia >= 6 && horaAcademia < 22) {
+            this.agenda = agenda;                      
+        }
+        
     }
 
     public int getZumba() {
