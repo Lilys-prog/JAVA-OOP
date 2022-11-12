@@ -43,13 +43,14 @@ public class regAcademia {
         this.agenda = agenda;
     }
        
-    public void agendar(int aero, int zumba, int musc, int luta, int persTrainer) {  
+    public void agendar(int aero, int zumba, int musc, int luta, int persTrainer) {
+        if (this.getAgenda()) {
             this.setAero(aero);
             this.setZumba(zumba);
             this.setMusc(musc);
             this.setLuta(luta);
             this.setPersTrainer(persTrainer);
-            if (aero == zumba || aero == musc || aero == luta || aero == persTrainer) {
+            if (this.getAero() == this.getZumba() || aero == musc || aero == luta || aero == persTrainer) {
                 System.out.println("Você tem aulas marcadas para o mesmo horário. Verifique e atualize.");
             } else if (zumba == musc || zumba == luta || zumba == persTrainer) {
                 System.out.println("Você tem aulas marcadas para o mesmo horário. Verifique e atualize.");
@@ -59,8 +60,11 @@ public class regAcademia {
                 System.out.println("Você tem aulas marcadas para o mesmo horário. Verifique e atualize.");
             } else {
                 System.out.println("Agenda pronta!");
-            }        
-    } 
+            }
+        } else {
+            System.out.println("Esta pessoa ainda não pode marcar aulas");
+        }
+    }
     
     public String getNomeAluno() {
         return nomeAluno;
