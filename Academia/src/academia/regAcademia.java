@@ -40,13 +40,10 @@ public class regAcademia {
     }
 
     public void setAgenda(boolean agenda) {
-        if (horaAcademia >= 6 && horaAcademia < 22) {
-            this.agenda = true;                      
-        }        
+        this.agenda = agenda;
     }
-    
-    public void agendar(int aero, int zumba, int musc, int luta, int persTrainer) {
-        if (matricular() == true) {
+       
+    public void agendar(int aero, int zumba, int musc, int luta, int persTrainer) {  
             this.setAero(aero);
             this.setZumba(zumba);
             this.setMusc(musc);
@@ -62,10 +59,7 @@ public class regAcademia {
                 System.out.println("Você tem aulas marcadas para o mesmo horário. Verifique e atualize.");
             } else {
                 System.out.println("Agenda pronta!");
-            }
-        } else {
-            System.out.println("Não podemos fazer sua agenda, você não está matriculado.");
-        }
+            }        
     } 
     
     public String getNomeAluno() {
@@ -95,9 +89,7 @@ public class regAcademia {
         } else {
             System.out.println("Academia fechada!");
         }
-    }     
-
-    
+    }        
 
     public int getZumba() {
         return zumba;
