@@ -35,8 +35,18 @@ public class regAcademia {
       this.setAgenda(true);
     }
     
+    public boolean getAgenda() {
+        return agenda;
+    }
+
+    public void setAgenda(boolean agenda) {
+        if (horaAcademia >= 6 && horaAcademia < 22) {
+            this.agenda = true;                      
+        }        
+    }
+    
     public void agendar(int aero, int zumba, int musc, int luta, int persTrainer) {
-        if (setAgenda()) {
+        if (matricular() == true) {
             this.setAero(aero);
             this.setZumba(zumba);
             this.setMusc(musc);
@@ -87,16 +97,7 @@ public class regAcademia {
         }
     }     
 
-    public boolean getAgenda() {
-        return agenda;
-    }
-
-    public void setAgenda(boolean agenda) {
-        if (horaAcademia >= 6 && horaAcademia < 22) {
-            this.agenda = agenda;                      
-        }
-        
-    }
+    
 
     public int getZumba() {
         return zumba;
