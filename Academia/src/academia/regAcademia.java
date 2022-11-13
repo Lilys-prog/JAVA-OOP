@@ -50,7 +50,7 @@ public class regAcademia {
             this.setMusc(musc);
             this.setLuta(luta);
             this.setPersTrainer(persTrainer);
-            if (this.getAero() == this.getZumba() || aero == musc || aero == luta || aero == persTrainer) {
+            if (this.getAero() == this.getZumba() || this.getAero() == this.getMusc() || this.getAero() == this.getLuta() || this.getAero() == this.getPersTrainer()) {
                 System.out.println("Você tem aulas marcadas para o mesmo horário. Verifique e atualize.");
             } else if (zumba == musc || zumba == luta || zumba == persTrainer) {
                 System.out.println("Você tem aulas marcadas para o mesmo horário. Verifique e atualize.");

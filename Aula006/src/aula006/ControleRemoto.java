@@ -8,28 +8,36 @@ public class ControleRemoto implements Controlador {
     private boolean ligado;
     private boolean tocando;
     
+    // tinha esquecido o construtor
+    public ControleRemoto() {
+        this.volume = 50;
+        this.ligado = true;
+        this.tocando = false;
+    }
+    
     // métodos especiais (com o atalho ele usa 'is' ao invés de 'get' nos booleans. Por enquanto, substituir por 'get')
-    public int getVolume() {
+    // fazendo o exemplo com todos eles no modo privado. Por isso, não podem ser usados fora da classe, então só o uso dos métodos descritos no controlador e programados aqui. Os getters e setters estão sendo usados aqui, para criar os códigos que era abstratos na outra página.
+    private int getVolume() {
         return volume;
     }
 
-    public void setVolume(int volume) {
+    private void setVolume(int volume) {
         this.volume = volume;
     }
 
-    public boolean getLigado() {
+    private boolean getLigado() {
         return ligado;
     }
 
-    public void setLigado(boolean ligado) {
+    private void setLigado(boolean ligado) {
         this.ligado = ligado;
     }
 
-    public boolean getTocando() {
+    private boolean getTocando() {
         return tocando;
     }
 
-    public void setTocando(boolean tocando) {
+    private void setTocando(boolean tocando) {
         this.tocando = tocando;
     }
     
@@ -45,16 +53,19 @@ public class ControleRemoto implements Controlador {
     @Override
     public void desligar() {
         this.setLigado(false);
+        this.setVolume(0);
     }
 
     @Override
     public void abrirMenu() {
+        System.out.println("------ Menu ------");
         System.out.println("Está ligado? " + this.getLigado());
         System.out.println("Está tocando? " + this.getTocando());
-        System.out.println("Volume: " + this.getVolume());
-        for (int i = 0; i <= this.getVolume(); i += 10) {
-            System.out.println("| ");            
+        System.out.print("Volume: " + this.getVolume());
+        for (int i = 1; i <= this.getVolume(); i += 10) {
+            System.out.print(" | ");            
         }
+        System.out.println("");
     }
 
     @Override
@@ -66,6 +77,8 @@ public class ControleRemoto implements Controlador {
     public void maisVolume() {
         if (this.getLigado()) {
             this.setVolume(this.getVolume() + 5);
+        } else {
+            System.out.println("Impossível aumentar o volume, está desligado.");
         }
     }
 
@@ -73,6 +86,8 @@ public class ControleRemoto implements Controlador {
     public void menosVolume() {
         if (this.getLigado()) {
             this.setVolume(this.getVolume() - 5);
+        } else {
+            System.out.println("Impossível diminuir o volume, está desligado.");
         }
     }
 
@@ -94,7 +109,7 @@ public class ControleRemoto implements Controlador {
     public void play() {
         if (this.getLigado() && !(this.getTocando())) {
             this.setTocando(true);
-        }
+        } 
     }
 
     @Override
@@ -102,6 +117,8 @@ public class ControleRemoto implements Controlador {
         if (this.getLigado() && this.getTocando()) {
             this.setTocando(false);
         }
-    }       
+    }   
+
+// aqui termina a programação da classe, a partir de agora vamos verificar se o controle remoto funciona, poiis já foi feito o código, e a interface. Agora é só criar os objetos.  
     
 }
