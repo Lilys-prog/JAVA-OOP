@@ -3,7 +3,7 @@ public class Aula007 {
     public static void main(String[] args) {
         // programa principal
         // para criar como variáveis independentes se usa o construtor
-        // Lutador l = new lutador (todos os atributos menos categoria);
+        // Lutador l[] = new lutador[n] (todos os atributos menos categoria);
         // ao declarar tem q usar o 'f' nos floats
         // como array(que é muito melhor):
         Lutador l[] = new Lutador[6]; // declaração de array - objeto de classe
