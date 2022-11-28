@@ -123,8 +123,7 @@ public class Lutador {
         this.setEmpates(this.getEmpates() + 1);
     }
     
-    public void apresentar() {
-        System.out.println("--------------------------------------------------");
+    public void apresentar() {        
         System.out.println("Deste lado do ringue temos " + this.getNome());
         System.out.println("Representando seu país: " + this.getNacionalidade());
         System.out.println("Com apenas " + this.getIdade() + " anos");
@@ -132,6 +131,7 @@ public class Lutador {
         System.out.println("Pesando " + this.getPeso() + "kg");
         System.out.println("Na categoria " + this.getCategoria());
         System.out.println("Tendo " + this.getVitorias() + " vitória(s), " + this.getDerrotas() + " derrota(s) e " + this.getEmpates() + " empate(s)!");
+        System.out.println("--------------------------------------------------");
     }
     
     public void status() {
@@ -140,6 +140,7 @@ public class Lutador {
         System.out.println(this.getVitorias() + " vitória(s)");
         System.out.println(this.getDerrotas() + " derrota(s)");
         System.out.println(this.getEmpates() + " empate(s)");
+        System.out.println("===================================");
     }
 
 }
